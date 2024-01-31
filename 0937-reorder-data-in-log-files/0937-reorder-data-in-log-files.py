@@ -14,6 +14,6 @@ class Solution:
 
         #문자로그는 식별자 뒤 문자 순서대로 정렬 후
         #식별자 순으로 정렬 (문자 로그가 같은 경우를 위해서)
-        letters.sort(key=lambda x:( x.split()[1:], x.split()[0]))
+        letters.sort(key=lambda x:(x.split()[1:], x.split()[0]))
     #    print(letters+digits)
         return letters+digits
