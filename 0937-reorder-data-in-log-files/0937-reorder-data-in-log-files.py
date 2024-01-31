@@ -8,6 +8,6 @@ class Solution:
             else:
                 letters.append(log)
 
-        letters.sort(key=lambda x:(x.split()[1], x.split()[1:], x.split()[0]))
+        letters.sort(key=lambda x:( x.split()[1:], x.split()[0]))
     #    print(letters+digits)
         return letters+digits
